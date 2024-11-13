@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>My Portfolio</title>
+        <link rel="icon" href="image/favicon.svg" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="main" href="main.js">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar" id="myNavbar">
+                <a
+                    class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                    href="javascript:void(0);" onclick="toggleFunction()"
+                    title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="#home" class="w3-bar-item w3-button">HOME</a>
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i
+                        class="fa fa-user"></i>ABOUT</a>
+                <a href="#portfolio"
+                    class="w3-bar-item w3-button w3-hide-small"><i
+                        class="fa fa-th"></i>GALERY</a>
+                <a href="#contact"
+                    class="w3-bar-item w3-button w3-hide-small"><i
+                        class="fa fa-envelope"></i>CONTACT</a>
+                <!-- Language Switch Button -->
+                <a href="javascript:void(0);" class="w3-bar-item w3-button"
+                    onclick="switchLanguage()">BG / EN</a>
+
+            </div>
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo"
+                class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+                <a href="#about" class="w3-bar-item w3-button"
+                    onclick="toggleFunction()">ABOUT</a>
+                <a href="#portfolio" class="w3-bar-item w3-button"
+                    onclick="toggleFunction()">GALERY</a>
+                <a href="#contact" class="w3-bar-item w3-button"
+                    onclick="toggleFunction()">CONTACT</a>
+                <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+            </div>
+        </div>
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+        <!-- Container (About Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="about">
+            <h3 class="w3-center">ABOUT ME</h3>
+            <p id="aboutText">
+            </p>
+            <div class="w3-row">
+                <div class="w3-col m5 w3-center w3-padding-large">
+                    <p><b><i class="fa fa-user w3-margin-right"></i>Daniel
+                            Uzunov</b></p><br>
+                    <img src="image/img6.jpeg"
+                        class="w3-round w3-image w3-opacity w3-hover-opacity-off"
+                        alt="Photo of Me"
+                        width="500" height="333">
+                </div>
+
+                <!-- Hide this text on small devices -->
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <p id="aboutText2"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+            <div class="w3-third w3-section">
+                <span class="w3-xlarge"></span><br>
+                
+            </div>
+            <div class="w3-third w3-section">
+                <p></p>
+                <div>
+                    <span class="w3-xlarge">
+                        <img src="image/omsight.png" class="w3-hover-opacity"
+                            alt="Salomon Bulgaria"
+                            style="width:100px; height:auto;">
+                    </span>
+                    <span class="w3-xlarge">
+                        <img src="image/freerideteambg.svg"
+                            class="w3-hover-opacity" alt="FreerideTeamBG"
+                            style="width:80px; height:auto;">
+                    </span>
+                    <span class="w3-xlarge">
+                        <img src="image/head.jpeg" class="w3-hover-opacity"
+                            alt="Surefoot"
+                            style="width:100px; height:auto;">
+                    </span>
+                </div>
+            </div>
+            <div class="w3-third w3-section">
+                <span class="w3-xlarge"></span><br>
+                
+            </div>
+        </div>
+
+        <div class="bgimg-2 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+            </div>
+        </div>
+
+        <div class="w3-content w3-container w3-padding-56" id="portfolio"
+            style="margin-top: 30px; font-size:medium">
+            <h3 class="w3-center">Future plans</h3>
+            <p class="w3-center" id="futurePlans">
+            </p><br>
+        </div>
+
+        <hr>
+
+        <div class="w3-content w3-container w3-padding-56" id="portfolio">
+            <h3 class="w3-center">Latest Skiing Adventures</h3>
+            <p class="w3-center" id="latest"><em>
+                    <br>
+                </em><br>
+                <p class="w3-center" id="clickPicture"></p>
+            </p>
+
+            <div class="w3-row-padding w3-center">
+                <div class="w3-col m3">
+                    <img src="image/img1.jpeg" style="width:100%"
+                        onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Backflip of a cliff...one of my favorites photos">
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="image/img12.jpeg" style="width:100%"
+                        onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="My first victory in ski men category in Bansko 2023">
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="image/img11.jpeg" style="width:100%"
+                        onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="On the way to mt. Todorka">
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="image/img4.jpeg" style="width:100%"
+                        onclick="onClick(this)" class="w3-hover-opacity"
+                        alt>
+                </div>
+            </div>
+
+            <div class="w3-row-padding w3-center w3-section">
+                <div class="w3-col m3">
+                    <img src="image/img5.jpeg" style="width:100%"
+                        onclick="onClick(this)" class="w3-hover-opacity" alt>
+                </div>
+                <div class="w3-col m3">
+                    <img src="image/img13.jpeg" style="width:100%"
+                        onclick="onClick(this)" class="w3-hover-opacity" alt>
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="image/img7.jpeg" style="width:100%"
+                        onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="My first junior title in Andorra 2017">
+                </div>
+                <div class="w3-col m3">
+                    <img src="image/img8.jpeg" style="width:100%"
+                        onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Demianitsa valley in Pirin mountainous">
+                </div>
+            </div>
+            <!-- <div class="w3-center" style="margin-top: 50px;">
+                <h4>
+                    <b><i> Highlights from Our Film: Зима</i></b>
+                </h4>
+                <p style="font-size: small; color: gray;">
+                    Please note, the video may take some time to load.
+                </p>
+            </div>
+
+            <div class="w3-center" style="margin-top: 50px;">
+                <h4>
+                    <video style="max-width: 100%; height: auto;" controls>
+                        <source src="video/ZimaShortEdit.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </h4>
+            </div> -->
+
+        </div>
+        <hr>
+
+        <!-- Modal for full size image on click-->
+        <div id="modal01" class="w3-modal w3-black"
+            onclick="this.style.display='none'">
+            <span class="w3-button w3-large w3-black w3-display-topright"
+                title="Close Modal Image"><i
+                    class="fa fa-remove"></i></span>
+            <div
+                class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption" class="w3-opacity w3-large"></p>
+            </div>
+        </div>
+
+        <!-- Third Parallax Image with Portfolio Text -->
+        <div class="bgimg-3 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Container (Contact Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="contact">
+            <h3 class="w3-center">CONTACT</h3>
+            <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+            <div class="w3-center">
+                <div class="w3-center">
+                    <div class="w3-large w3-margin-bottom">
+                        <i
+                            class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+                        Sofia, BG<br>
+                        <i
+                            class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+                        Email:
+                        dan.uzunov@gmail.com<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer
+            class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+
+            <div class="w3-xlarge w3-section">
+                <div class="tooltip"><a
+                        href="https://www.facebook.com/daniel.uzunov.100"
+                        class="fa fa-facebook-official w3-hover-opacity"></a><span
+                        class="tooltiptext">Facebook</span></div>
+                <div class="tooltip"><a
+                        href="https://www.instagram.com/daniel_uzunov/"
+                        class="fa fa-instagram w3-hover-opacity"></a><span
+                        class="tooltiptext">Instagram</span></div>
+                <div class="tooltip"><a
+                        href="https://www.freerideworldtour.com/qualifier/riders/daniel-uzunov/?season=2023"
+                        class="fa fa-bars w3-hover-opacity"></a><span
+                        class="tooltiptext">Freeride Tour Profile</span></div>
+            </div>
+            <p>Powered by <a href="https://freerideteambg.com"
+                    title="freerideteambg.com" target="_blank"
+                    class="w3-hover-text-green"><em>freerideteambg.com</em></a></p>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+
+</html>
